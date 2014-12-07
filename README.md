@@ -26,4 +26,4 @@ If you have any questions, comments, feature requests, or patches, feel free to 
 phpgiftreg is licensed by the GPL.  For more information on the GPL, visit 
 http://www.gnu.org
 
-&copy; 2014 [Ryan Hoover](ryan@hoover.ws)
+&copy; 2014 [Ryan Hoover](http://ryan.hoover.ws)

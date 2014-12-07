@@ -52,6 +52,8 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 	</script>
 </head>
 <body>
+	{include file='navbar.tpl'}
+
 	<div class="container" style="padding-top: 30px;">
 		<div class="row">
 			<div class="col-md-8 offset2">
