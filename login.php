@@ -50,6 +50,7 @@ if (!empty($_POST["username"])) {
 	}
 
 	$smarty->assign('username', $username);
+	$smarty->assign('protocol', effectiveProtocol());
 	$smarty->display('login.tpl');
 }
 else {

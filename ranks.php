@@ -162,5 +162,6 @@ if (isset($rendered_error)) {
 }
 $smarty->assign('ranking', $_GET["ranking"]);
 $smarty->assign('haserror', $haserror);
+$smarty->assign('protocol', effectiveProtocol());
 $smarty->display('ranks.tpl');
 ?>

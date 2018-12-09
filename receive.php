@@ -108,6 +108,7 @@ try {
 	$smarty->assign('quantity', $quantity);
 	$smarty->assign('itemid', $itemid);
 	$smarty->assign('userid', $userid);
+	$smarty->assign('protocol', effectiveProtocol());
 	$smarty->display('receive.tpl');
 }
 catch (PDOException $e) {

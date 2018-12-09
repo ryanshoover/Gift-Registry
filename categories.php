@@ -126,5 +126,6 @@ if (isset($category_error)) {
 $smarty->assign('haserror', $haserror);
 $smarty->assign('isadmin', $_SESSION["admin"]);
 $smarty->assign('opt', $smarty->opt());
+$smarty->assign('protocol', effectiveProtocol());
 $smarty->display('categories.tpl');
 ?>

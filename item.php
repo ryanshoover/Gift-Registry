@@ -299,5 +299,6 @@ $smarty->assign('image_filename', $image_filename);
 $smarty->assign('comment', $comment);
 $smarty->assign('categories', $categories);
 $smarty->assign('ranks', $ranks);
+$smarty->assign('protocol', effectiveProtocol());
 $smarty->display('item.tpl');
 ?>

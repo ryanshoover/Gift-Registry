@@ -207,4 +207,14 @@ function fixForJavaScript($s) {
 	$s = str_replace("\n","<br />",$s);
 	return $s;
 }
+
+function effectiveProtocol() {
+	if( (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443 ){
+		return "https:";
+	}
+	else {
+		return "http:";
+	}
+}
+
 ?>

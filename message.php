@@ -58,6 +58,7 @@ try {
 	$smarty->assign('recipients', $recipients);
 	$smarty->assign('rcount', $rcount);
 	$smarty->assign('userid', $userid);
+	$smarty->assign('protocol', effectiveProtocol());
 	$smarty->display('message.tpl');
 }
 catch (PDOException $e) {

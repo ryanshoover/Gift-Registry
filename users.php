@@ -221,5 +221,6 @@ if (isset($message)) {
 	$smarty->assign('message', $message);
 }
 $smarty->assign('userid', $userid);
+$smarty->assign('protocol', effectiveProtocol());
 $smarty->display('users.tpl');
 ?>

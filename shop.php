@@ -220,6 +220,7 @@ $smarty->assign('ufullname', $ufullname);
 $smarty->assign('shopfor', $shopfor);
 $smarty->assign('shoprows', $shoprows);
 $smarty->assign('userid', $userid);
+$smarty->assign('protocol', effectiveProtocol());
 if (isset($message)) {
 	$smarty->assign('message', $message);
 }

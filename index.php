@@ -311,6 +311,7 @@ $smarty->assign('shoppees', $shoppees);
 $smarty->assign('prospects', $prospects);
 $smarty->assign('messages', $messages);
 $smarty->assign('events', $events);
+$smarty->assign('protocol', effectiveProtocol());
 if (isset($pending)) {
 	$smarty->assign('pending', $pending);
 }

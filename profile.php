@@ -89,6 +89,7 @@ try {
 		$smarty->assign('email', $row["email"]);
 		$smarty->assign('email_msgs', $row["email_msgs"]);
 		$smarty->assign('comment', $row["comment"]);
+		$smarty->assign('protocol', effectiveProtocol());
 		$smarty->display('profile.tpl');
 	}
 	else {
