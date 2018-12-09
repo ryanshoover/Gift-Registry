@@ -106,6 +106,7 @@ $smarty->assign('email', $email);
 $smarty->assign('familyid', $familyid);
 $smarty->assign('familycount', count($families));
 $smarty->assign('action', $_POST["action"]);
+$smarty->assign('protocol', effectiveProtocol());
 if (isset($error)) {
 	$smarty->assign('error', $error);
 }

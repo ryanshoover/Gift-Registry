@@ -82,6 +82,7 @@ try {
 	$smarty->assign('totalprice', formatPrice($totalprice, $opt));
 	$smarty->assign('itemcount', $itemcount);
 	$smarty->assign('userid', $userid);
+	$smarty->assign('protocol', effectiveProtocol());
 	$smarty->display('shoplist.tpl');
 }
 catch (PDOException $e) {

@@ -213,6 +213,7 @@ try {
 		$smarty->assign('eventid', $eventid);
 	}
 	$smarty->assign('userid', $userid);
+	$smarty->assign('protocol', effectiveProtocol());
 	$smarty->display('event.tpl');
 }
 catch (PDOException $e) {

@@ -185,6 +185,7 @@ try {
 	if (isset($message)) {
 		$smarty->assign('message', $message);
 	}
+	$smarty->assign('protocol', effectiveProtocol());
 	$smarty->display('families.tpl');
 }
 catch (PDOException $e) {

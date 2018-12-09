@@ -57,6 +57,7 @@ if (isset($_POST["action"]) && $_POST["action"] == "forgot") {
 		}
 		$smarty->assign('action', $_POST["action"]);
 		$smarty->assign('username', $username);
+		$smarty->assign('protocol', effectiveProtocol());
 		$smarty->display('forgot.tpl');
 	}
 	catch (PDOException $e) {
